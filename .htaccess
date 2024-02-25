@@ -1,0 +1,6 @@
+RewriteEngine On
+DirectoryIndex calistir.php
+#RewriteBase /
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ calistir.php?islem=$1&user=$2&zp=$3&uNo=$4&tick=$5&hSayi=$6&ozet=$7&data=$8 [QSA,L]
